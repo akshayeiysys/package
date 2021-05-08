@@ -1,30 +1,40 @@
-# uikit
+# 🥞 Pancake UIkit
 
-> description
+[![Version](https://img.shields.io/npm/v/@pancakeswap-libs/uikit)](https://www.npmjs.com/package/@pancakeswap-libs/uikit) [![Size](https://img.shields.io/bundlephobia/min/@pancakeswap-libs/uikit)](https://www.npmjs.com/package/@pancakeswap-libs/uikit)
 
-[![NPM](https://img.shields.io/npm/v/uikit.svg)](https://www.npmjs.com/package/uikit) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+Pancake UIkit is a set of React components and hooks used to build pages on Pancake's apps. It also contains a theme file for dark and light mode.
 
 ## Install
 
-```bash
-npm install --save uikit
+`yarn add @pancakeswap-libs/uikit`
+
+## Setup
+
+### Theme
+
+Before using Pancake UIkit, you need to provide the theme file to styled-component.
+
+```
+import { ThemeProvider } from 'styled-components'
+import { light, dark } from '@pancakeswap-libs/uikit'
+...
+<ThemeProvider theme={isDark}>...</ThemeProvider>
 ```
 
-## Usage
+### Reset
 
-```jsx
-import React, { Component } from 'react'
+A reset CSS is available as a global styled component.
 
-import MyComponent from 'uikit'
-import 'uikit/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
+```
+import { ResetCSS } from '@pancakeswap-libs/uikit'
+...
+<ResetCSS />
 ```
 
-## License
+### Types
 
-MIT © [akshayeiysys/package](https://github.com/akshayeiysys/package)
+This project is built with Typescript and export all the relevant types.
+
+## How to use the UIkit
+
+If you want to use components from the UIkit, check the [Storybook documentation](https://pancakeswap.github.io/pancake-uikit/)

@@ -1,53 +1,55 @@
 {
-  "name": "uikit",
-  "version": "1.0.0",
-  "description": "description",
-  "author": "akshayeiysys/package",
-  "license": "MIT",
-  "repository": "akshayeiysys/package/uikit",
-  "main": "dist/index.js",
-  "module": "dist/index.modern.js",
-  "source": "src/index.js",
-  "engines": {
-    "node": ">=10"
-  },
-  "scripts": {
-    "build": "microbundle-crl --no-compress --format modern,cjs",
-    "start": "microbundle-crl watch --no-compress --format modern,cjs",
-    "prepare": "run-s build",
-    "test": "run-s test:unit test:lint test:build",
-    "test:build": "run-s build",
-    "test:lint": "eslint .",
-    "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
-    "test:watch": "react-scripts test --env=jsdom",
-    "predeploy": "cd example && npm install && npm run build",
-    "deploy": "gh-pages -d example/build"
-  },
-  "peerDependencies": {
-    "react": "^16.0.0"
-  },
-  "devDependencies": {
-    "microbundle-crl": "^0.13.10",
-    "babel-eslint": "^10.0.3",
-    "cross-env": "^7.0.2",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.7.0",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-config-standard-react": "^9.2.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-prettier": "^3.1.1",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.17.0",
-    "eslint-plugin-standard": "^4.0.1",
-    "gh-pages": "^2.2.0",
-    "npm-run-all": "^4.1.5",
-    "prettier": "^2.0.4",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.1"
-  },
+  "name": "ajay-uikit",
+  "version": "1.0.3",
+  "description": "Set of UI components for pancake projects",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
-  ]
+  ],
+  "repository": "akshayeiysys/package/uikit",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn storybook",
+    "build": "rm -rf ./dist && rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+    "format:check": "prettier --check --loglevel error 'src/**/*.{js,jsx,ts,tsx}'",
+    "format:write": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
+    "storybook": "start-storybook -p 6006",
+    "storybook:build": "build-storybook",
+    "test": "jest"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.js"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.5",
+    "jest-styled-components": "^7.0.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "styled-components": "^5.2.0"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
+    "styled-components": "^5.2.3"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "@types/lodash": "^4.14.168",
+    "@types/styled-system": "^5.1.10",
+    "lodash": "^4.17.20",
+    "react-popper": "^2.2.5",
+    "react-transition-group": "^4.4.1",
+    "styled-system": "^5.1.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
