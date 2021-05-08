@@ -1,6 +1,6 @@
 {
   "name": "ajay-uikit",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Set of UI components for pancake projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -28,11 +28,12 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.5",
+    "@types/styled-components": "^5.1.9",
     "jest-styled-components": "^7.0.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
-    "styled-components": "^5.2.0"
+    "styled-components": "^5.3.0"
   },
   "peerDependencies": {
     "react": "^17.0.2",
