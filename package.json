@@ -8,7 +8,7 @@
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/akshayeiysys/package/tree/main/package/uikit",
+  "repository": "https://github.com/akshayeiysys/package",
   "license": "MIT",
   "scripts": {
     "start": "yarn storybook",
