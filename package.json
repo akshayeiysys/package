@@ -11,14 +11,12 @@
   "repository": "https://github.com/akshayeiysys/package",
   "license": "MIT",
   "scripts": {
-    "start": "yarn storybook",
     "build": "lerna run build",
-    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
-    "format:check": "prettier --check --loglevel error 'src/**/*.{js,jsx,ts,tsx}'",
-    "format:write": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
-    "storybook": "start-storybook -p 6006",
-    "storybook:build": "build-storybook",
-    "test": "jest"
+    "test": "lerna run test",
+    "lint": "lerna run lint",
+    "format:check": "lerna run format:check",
+    "storybook:build": "lerna run storybook:build",
+    "release": "yarn build && yarn lerna publish"
   },
   "jest": {
     "setupFilesAfterEnv": [
