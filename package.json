@@ -1,6 +1,6 @@
 {
   "name": "ajay-uikit",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Set of UI components for pancake projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -8,15 +8,18 @@
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/akshayeiysys/package",
+  "repository": "https://github.com/akshayeiysys/package/tree/main/package/uikit",
   "license": "MIT",
   "scripts": {
-    "build": "lerna run build",
-    "test": "lerna run test",
-    "lint": "lerna run lint",
-    "format:check": "lerna run format:check",
-    "storybook:build": "lerna run storybook:build",
-    "release": "yarn build && yarn lerna publish"
+    "start": "yarn storybook",
+    "build": "rm -rf ./dist && rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+    "format:check": "prettier --check --loglevel error 'src/**/*.{js,jsx,ts,tsx}'",
+    "format:write": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
+    "storybook": "start-storybook -p 6006",
+    "storybook:build": "build-storybook",
+    "test": "jest",
+    "prepublishOnly": "yarn build"
   },
   "jest": {
     "setupFilesAfterEnv": [
