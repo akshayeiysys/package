@@ -3109,7 +3109,7 @@ var Logo$2 = function (_a) {
     // </Svg>
     );
 };
-var LogoWithText = React__default['default'].memo(Logo$2, function (prev, next) { return prev.isDark === next.isDark; });
+var Logo$3 = React__default['default'].memo(Logo$2, function (prev, next) { return prev.isDark === next.isDark; });
 
 var Icon$h = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
@@ -3186,7 +3186,7 @@ var IconModule = /*#__PURE__*/Object.freeze({
     IfoIcon: Icon$k,
     InfoIcon: Icon$j,
     LanguageIcon: Icon$i,
-    LogoIcon: LogoWithText,
+    LogoIcon: Logo$3,
     MoonIcon: Icon$h,
     MoreIcon: Icon$g,
     NftIcon: Icon$f,
@@ -3219,11 +3219,11 @@ var StyledLink = styled__default['default'](reactRouterDom.Link)(templateObject_
     return theme.mediaQueries.nav;
 }, blink);
 var Logo = function (_a) {
-    var isPushed = _a.isPushed, togglePush = _a.togglePush, isDark = _a.isDark, href = _a.href;
+    var isPushed = _a.isPushed, togglePush = _a.togglePush; _a.isDark; var href = _a.href;
     var isAbsoluteUrl = href.startsWith("http");
     var innerLogo = (React__default['default'].createElement(React__default['default'].Fragment, null,
         React__default['default'].createElement(Icon$10, { className: "mobile-icon" }),
-        React__default['default'].createElement(LogoWithText, { className: "desktop-icon", isDark: isDark })));
+        React__default['default'].createElement("img", { src: "../../../public/images/img.png", className: "desktop-icon" })));
     return (React__default['default'].createElement(Flex, null,
         React__default['default'].createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React__default['default'].createElement(Icon$m, { width: "24px", color: "textSubtle" })) : (React__default['default'].createElement(Icon$n, { width: "24px", color: "textSubtle" }))),
         isAbsoluteUrl ? (React__default['default'].createElement(StyledLink, { as: "a", href: href, "aria-label": "Pancake home page" }, innerLogo)) : (React__default['default'].createElement(StyledLink, { to: href, "aria-label": "Pancake home page" }, innerLogo))));

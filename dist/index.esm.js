@@ -3096,7 +3096,7 @@ var Logo$2 = function (_a) {
     // </Svg>
     );
 };
-var LogoWithText = React.memo(Logo$2, function (prev, next) { return prev.isDark === next.isDark; });
+var Logo$3 = React.memo(Logo$2, function (prev, next) { return prev.isDark === next.isDark; });
 
 var Icon$h = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
@@ -3173,7 +3173,7 @@ var IconModule = /*#__PURE__*/Object.freeze({
     IfoIcon: Icon$k,
     InfoIcon: Icon$j,
     LanguageIcon: Icon$i,
-    LogoIcon: LogoWithText,
+    LogoIcon: Logo$3,
     MoonIcon: Icon$h,
     MoreIcon: Icon$g,
     NftIcon: Icon$f,
@@ -3206,11 +3206,11 @@ var StyledLink = styled(Link$1)(templateObject_2$6 || (templateObject_2$6 = __ma
     return theme.mediaQueries.nav;
 }, blink);
 var Logo = function (_a) {
-    var isPushed = _a.isPushed, togglePush = _a.togglePush, isDark = _a.isDark, href = _a.href;
+    var isPushed = _a.isPushed, togglePush = _a.togglePush; _a.isDark; var href = _a.href;
     var isAbsoluteUrl = href.startsWith("http");
     var innerLogo = (React.createElement(React.Fragment, null,
         React.createElement(Icon$10, { className: "mobile-icon" }),
-        React.createElement(LogoWithText, { className: "desktop-icon", isDark: isDark })));
+        React.createElement("img", { src: "../../../public/images/img.png", className: "desktop-icon" })));
     return (React.createElement(Flex, null,
         React.createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React.createElement(Icon$m, { width: "24px", color: "textSubtle" })) : (React.createElement(Icon$n, { width: "24px", color: "textSubtle" }))),
         isAbsoluteUrl ? (React.createElement(StyledLink, { as: "a", href: href, "aria-label": "Pancake home page" }, innerLogo)) : (React.createElement(StyledLink, { to: href, "aria-label": "Pancake home page" }, innerLogo))));
