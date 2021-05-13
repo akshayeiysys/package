@@ -10,6 +10,10 @@ import UserBlock from "./components/UserBlock";
 import { NavProps } from "./types";
 import Avatar from "./components/Avatar";
 import { MENU_HEIGHT, SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL } from "./config";
+import ThemeSwitcher from "./components/ThemeSwitcher";
+import LangSelector from "./components/LangSelector";
+
+import CakePrice from "./components/CakePrice";
 
 const Wrapper = styled.div`
   position: relative;
@@ -123,6 +127,9 @@ const Menu: React.FC<NavProps> = ({
           href={homeLink?.href ?? "/"}
         />
         <Flex>
+        <ThemeSwitcher isDark={isDark} toggleTheme={toggleTheme} />
+        <LangSelector currentLang={currentLang} langs={langs} setLang={setLang} />
+        <CakePrice cakePriceUsd={cakePriceUsd} />
           <UserBlock account={account} login={login} logout={logout} />
           {profile && <Avatar profile={profile} />}
         </Flex>
