@@ -3820,9 +3820,7 @@ var Avatar = function (_a) {
             React__default['default'].createElement("a", { href: link, "aria-label": ariaLabel }, icon),
             showPip && React__default['default'].createElement(Pip, null)));
     }
-    return (React__default['default'].createElement(StyledAvatar, { title: username },
-        React__default['default'].createElement(reactRouterDom.Link, { to: link, "aria-label": ariaLabel }, icon),
-        showPip && React__default['default'].createElement(Pip, null)));
+    return (React__default['default'].createElement(StyledAvatar, { title: username }));
 };
 var templateObject_1$4, templateObject_2$1;
 

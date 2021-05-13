@@ -3807,9 +3807,7 @@ var Avatar = function (_a) {
             React.createElement("a", { href: link, "aria-label": ariaLabel }, icon),
             showPip && React.createElement(Pip, null)));
     }
-    return (React.createElement(StyledAvatar, { title: username },
-        React.createElement(Link$1, { to: link, "aria-label": ariaLabel }, icon),
-        showPip && React.createElement(Pip, null)));
+    return (React.createElement(StyledAvatar, { title: username }));
 };
 var templateObject_1$4, templateObject_2$1;
 
