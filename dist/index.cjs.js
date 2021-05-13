@@ -3830,20 +3830,25 @@ var UserBlock = function (_a) {
 var UserBlock$1 = React__default['default'].memo(UserBlock, function (prevProps, nextProps) { return prevProps.account === nextProps.account; });
 
 var StyledAvatar = styled__default['default'].div(templateObject_1$4 || (templateObject_1$4 = __makeTemplateObject(["\n  margin-left: 8px;\n  position: relative;\n\n  img {\n    border-radius: 50%;\n  }\n"], ["\n  margin-left: 8px;\n  position: relative;\n\n  img {\n    border-radius: 50%;\n  }\n"])));
-styled__default['default'].div(templateObject_2$1 || (templateObject_2$1 = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 50%;\n  pointer-events: none;\n  height: 8px;\n  position: absolute;\n  right: 0;\n  top: 0;\n  width: 8px;\n"], ["\n  background-color: ", ";\n  border-radius: 50%;\n  pointer-events: none;\n  height: 8px;\n  position: absolute;\n  right: 0;\n  top: 0;\n  width: 8px;\n"])), function (_a) {
+var Pip = styled__default['default'].div(templateObject_2$1 || (templateObject_2$1 = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 50%;\n  pointer-events: none;\n  height: 8px;\n  position: absolute;\n  right: 0;\n  top: 0;\n  width: 8px;\n"], ["\n  background-color: ", ";\n  border-radius: 50%;\n  pointer-events: none;\n  height: 8px;\n  position: absolute;\n  right: 0;\n  top: 0;\n  width: 8px;\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.failure;
 });
 var Avatar = function (_a) {
     var profile = _a.profile;
-    var _b = profile.username, username = _b === void 0 ? "Bunny" : _b, image = profile.image, profileLink = profile.profileLink, noProfileLink = profile.noProfileLink; profile.showPip;
+    var _b = profile.username, username = _b === void 0 ? "Bunny" : _b, image = profile.image, profileLink = profile.profileLink, noProfileLink = profile.noProfileLink, _c = profile.showPip, showPip = _c === void 0 ? false : _c;
     var link = profile.username ? profileLink : noProfileLink;
     var isExternal = link.startsWith("http");
-    image ? (React__default['default'].createElement("img", { src: image, alt: "profile avatar", height: "32px", width: "32px" })) : (React__default['default'].createElement(Icon$T, { width: "32px", height: "32px" }));
+    var ariaLabel = "Link to profile";
+    var icon = image ? (React__default['default'].createElement("img", { src: image, alt: "profile avatar", height: "32px", width: "32px" })) : (React__default['default'].createElement(Icon$T, { width: "32px", height: "32px" }));
     if (isExternal) {
-        return (React__default['default'].createElement(StyledAvatar, { title: username }));
+        return (React__default['default'].createElement(StyledAvatar, { title: username },
+            React__default['default'].createElement("a", { href: link, "aria-label": ariaLabel }, icon),
+            showPip && React__default['default'].createElement(Pip, null)));
     }
-    return (React__default['default'].createElement(StyledAvatar, { title: username }));
+    return (React__default['default'].createElement(StyledAvatar, { title: username },
+        React__default['default'].createElement(reactRouterDom.Link, { to: link, "aria-label": ariaLabel }, icon),
+        showPip && React__default['default'].createElement(Pip, null)));
 };
 var templateObject_1$4, templateObject_2$1;
 
@@ -3915,6 +3920,8 @@ var Menu = function (_a) {
         React__default['default'].createElement(StyledNav, { showMenu: showMenu },
             React__default['default'].createElement(Logo$1, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
             React__default['default'].createElement(Flex, null,
+                React__default['default'].createElement(ThemeSwitcher$1, { isDark: isDark, toggleTheme: toggleTheme }),
+                React__default['default'].createElement(LangSelector$1, { currentLang: currentLang, langs: langs, setLang: setLang }),
                 React__default['default'].createElement(UserBlock$1, { account: account, login: login, logout: logout }),
                 profile && React__default['default'].createElement(Avatar, { profile: profile }))),
         React__default['default'].createElement(BodyWrapper, null,
