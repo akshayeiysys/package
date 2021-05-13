@@ -11,7 +11,7 @@ interface AvatarProps {
 const StyledAvatar = styled.div`
   margin-left: 8px;
   position: relative;
-
+  margin-top: 8px;
   img {
     border-radius: 50%;
   }
