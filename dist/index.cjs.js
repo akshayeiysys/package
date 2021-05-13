@@ -3922,6 +3922,7 @@ var Menu = function (_a) {
             React__default['default'].createElement(Flex, null,
                 React__default['default'].createElement(ThemeSwitcher$1, { isDark: isDark, toggleTheme: toggleTheme }),
                 React__default['default'].createElement(LangSelector$1, { currentLang: currentLang, langs: langs, setLang: setLang }),
+                React__default['default'].createElement(CakePrice$1, { cakePriceUsd: cakePriceUsd }),
                 React__default['default'].createElement(UserBlock$1, { account: account, login: login, logout: logout }),
                 profile && React__default['default'].createElement(Avatar, { profile: profile }))),
         React__default['default'].createElement(BodyWrapper, null,
