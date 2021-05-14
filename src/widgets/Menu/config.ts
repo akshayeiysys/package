@@ -141,6 +141,11 @@ export const links = [
 
 export const socials = [
   {
+    label: "Twitter",
+    icon: "TwitterIcon",
+    href: "https://twitter.com/pancakeswap",
+  },
+  {
     label: "Telegram",
     icon: "TelegramIcon",
     items: [
@@ -198,11 +203,7 @@ export const socials = [
       },
     ],
   },
-  {
-    label: "Twitter",
-    icon: "TwitterIcon",
-    href: "https://twitter.com/pancakeswap",
-  },
+ 
 ];
 
 export const MENU_HEIGHT = 64;

@@ -3312,6 +3312,11 @@ var links = [
 ];
 var socials = [
     {
+        label: "Twitter",
+        icon: "TwitterIcon",
+        href: "https://twitter.com/pancakeswap",
+    },
+    {
         label: "Telegram",
         icon: "TelegramIcon",
         items: [
@@ -3368,11 +3373,6 @@ var socials = [
                 href: "https://t.me/PancakeSwapWhales",
             },
         ],
-    },
-    {
-        label: "Twitter",
-        icon: "TwitterIcon",
-        href: "https://twitter.com/pancakeswap",
     },
 ];
 var MENU_HEIGHT = 64;
