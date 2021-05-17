@@ -3199,11 +3199,11 @@ var links = [
         items: [
             {
                 label: "Exchange",
-                href: "https://exchange.pancakeswap.finance",
+                href: "http://3.143.197.157:8000/#/swap",
             },
             {
                 label: "Liquidity",
-                href: "https://exchange.pancakeswap.finance/#/pool",
+                href: "http://3.143.197.157:8000/#/pool",
             },
         ],
     },
