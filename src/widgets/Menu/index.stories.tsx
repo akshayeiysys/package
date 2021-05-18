@@ -16,7 +16,7 @@ export default {
 };
 
 const langs: LangType[] = [...Array(20)].map((_, i) => ({ code: `en${i}`, language: `English${i}` }));
-
+console.log(langs,"langs")
 // This hook is used to simulate a props change, and force a re rendering
 const useProps = () => {
   const [props, setProps] = useState({
