@@ -3992,13 +3992,13 @@ var templateObject_1;
 
 var baseColors = {
     failure: "#ED4B9E",
-    // primary: "#1FC7D4",
+    // primary: "#1FC7D4", unlock button and details part
     // primary: "#d41f40",
     primary: "#6400FF",
     primaryBright: "#53DEE9",
     primaryDark: "#0098A1",
     secondary: "#7645D9",
-    // secondary: "#d41f40",
+    // secondary: "#d41f40", core and 8x
     // secondary: "#d41f40",
     success: "#31D0AA",
     warning: "#FFB237",
@@ -4006,9 +4006,9 @@ var baseColors = {
 var brandColors = {
     binance: "#F0B90B",
 };
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#FAF9FA", backgroundDisabled: "#E9EAEB", backgroundAlt: "#FFFFFF", contrast: "#191326", dropdown: "#F6F6F6", invertedContrast: "#FFFFFF", input: "#eeeaf4", inputSecondary: "#d7caec", tertiary: "#EFF4F5", 
-    // text: "#452A7A",
-    text: "#d41f40", textDisabled: "#BDC2C4", 
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#FAF9FA", backgroundDisabled: "#E9EAEB", backgroundAlt: "#FFFFFF", contrast: "#191326", dropdown: "#F6F6F6", invertedContrast: "#FFFFFF", input: "#eeeaf4", inputSecondary: "#d7caec", tertiary: "#EFF4F5", text: "#452A7A", 
+    // text: "#d41f40", APR earn cake bnb
+    textDisabled: "#BDC2C4", 
     // textSubtle: "#8f80ba",
     textSubtle: "#f15e7a", borderColor: "#E9EAEB", gradients: {
         bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
