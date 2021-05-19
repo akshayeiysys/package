@@ -62,8 +62,8 @@ export const darkColors: Colors = {
   tertiary: "#353547",
   text: "#EAE2FC",
   textDisabled: "#666171",
- // textSubtle: "#A28BD4",
- textSubtle: "#6400FF",
+ textSubtle: "#A28BD4",
+//  textSubtle: "#6400FF",
   borderColor: "#524B63",
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
