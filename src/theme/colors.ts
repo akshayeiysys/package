@@ -7,7 +7,7 @@ export const baseColors = {
   primary: "#6400FF",
   primaryBright: "#53DEE9",
   primaryDark: "#0098A1",
-  secondary: "#7645D9",
+  secondary: "#6400FF",
   // secondary: "#d41f40", core and 8x
   success: "#31D0AA",
   warning: "#FFB237",
@@ -29,8 +29,8 @@ export const lightColors: Colors = {
   input: "#eeeaf4",
   inputSecondary: "#d7caec",
   tertiary: "#EFF4F5",
-   text: "#452A7A",
-  //  text: "#d41f40", apr earn cake bnb
+  //  text: "#452A7A",apr earn cake bnb
+   text: "#6400FF", 
   textDisabled: "#BDC2C4",
    // textSubtle: "#8f80ba",
    textSubtle: "#e2798c",
