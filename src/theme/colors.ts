@@ -29,8 +29,8 @@ export const lightColors: Colors = {
   input: "#eeeaf4",
   inputSecondary: "#d7caec",
   tertiary: "#EFF4F5",
-  //  text: "#452A7A",apr earn cake bnb
-   text: "#6400FF", 
+   text: "#452A7A",
+  //  text: "#6400FF", apr earn cake bnb
   textDisabled: "#BDC2C4",
    // textSubtle: "#8f80ba",
    textSubtle: "#e2798c",
