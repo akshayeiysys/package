@@ -3997,8 +3997,9 @@ var baseColors = {
     primary: "#6400FF",
     primaryBright: "#53DEE9",
     primaryDark: "#0098A1",
-    // secondary: "#7645D9",
-    secondary: "#d41f40",
+    secondary: "#7645D9",
+    // secondary: "#d41f40",
+    // secondary: "#d41f40",
     success: "#31D0AA",
     warning: "#FFB237",
 };
@@ -4016,9 +4017,9 @@ var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { ba
         violet: "linear-gradient(180deg, #E2C9FB 0%, #CDB8FA 100%)",
         violetAlt: "linear-gradient(180deg, #CBD7EF 0%, #9A9FD0 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { 
-    // secondary: "#9A6AFF",
-    secondary: "#f15e7a", background: "#100C18", backgroundDisabled: "#3c3742", backgroundAlt: "#27262c", contrast: "#FFFFFF", dropdown: "#1E1D20", invertedContrast: "#191326", input: "#483f5a", 
+var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#9A6AFF", 
+    // secondary: "#f15e7a",
+    background: "#100C18", backgroundDisabled: "#3c3742", backgroundAlt: "#27262c", contrast: "#FFFFFF", dropdown: "#1E1D20", invertedContrast: "#191326", input: "#483f5a", 
     // inputSecondary: "#66578D",
     inputSecondary: "#f15e7a", primaryDark: "#0098A1", tertiary: "#353547", text: "#EAE2FC", textDisabled: "#666171", 
     // textSubtle: "#A28BD4",
