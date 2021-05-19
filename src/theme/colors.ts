@@ -33,7 +33,7 @@ export const lightColors: Colors = {
   //  text: "#6400FF", apr earn cake bnb
   textDisabled: "#BDC2C4",
    // textSubtle: "#8f80ba",
-   textSubtle: "#e2798c",
+   textSubtle: "#6400FF",
   borderColor: "#E9EAEB",
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
@@ -63,7 +63,7 @@ export const darkColors: Colors = {
   text: "#EAE2FC",
   textDisabled: "#666171",
  // textSubtle: "#A28BD4",
- textSubtle: "#f15e7a",
+ textSubtle: "#6400FF",
   borderColor: "#524B63",
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
