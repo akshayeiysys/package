@@ -3999,7 +3999,7 @@ var baseColors = {
     primaryDark: "#0098A1",
     // secondary: "#7645D9",
     // secondary: "#d41f40", core and 8x
-    secondary: "#6400FF",
+    secondary: "#000000",
     success: "#31D0AA",
     warning: "#FFB237",
 };
