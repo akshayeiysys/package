@@ -3993,8 +3993,8 @@ var templateObject_1;
 var baseColors = {
     failure: "#ED4B9E",
     // primary: "#1FC7D4", unlock button and details part
-    // primary: "#d41f40",
-    primary: "#6400FF",
+    primary: "#ff5467",
+    // primary: "#6400FF",
     primaryBright: "#53DEE9",
     primaryDark: "#0098A1",
     // secondary: "#7645D9",
@@ -4006,11 +4006,11 @@ var baseColors = {
 var brandColors = {
     binance: "#F0B90B",
 };
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#FAF9FA", backgroundDisabled: "#E9EAEB", backgroundAlt: "#FFFFFF", contrast: "#191326", dropdown: "#F6F6F6", invertedContrast: "#FFFFFF", input: "#eeeaf4", inputSecondary: "#d7caec", tertiary: "#EFF4F5", text: "#452A7A", 
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#FAF9FA", backgroundDisabled: "#E9EAEB", backgroundAlt: "#FFFFFF", contrast: "#191326", dropdown: "#F6F6F6", invertedContrast: "#FFFFFF", input: "#eeeaf4", inputSecondary: "#d7caec", tertiary: "#EFF4F5", text: "#000000", 
     // text: "#6400FF", APR earn cake bnb
     textDisabled: "#BDC2C4", 
     // textSubtle: "#8f80ba",
-    textSubtle: "#6400FF", borderColor: "#E9EAEB", gradients: {
+    textSubtle: "#000000", borderColor: "#E9EAEB", gradients: {
         bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
         cardHeader: "linear-gradient(111.68deg, #F2ECF2 0%, #E8F2F6 100%)",
         blue: "linear-gradient(180deg, #A7E8F1 0%, #94E1F2 100%)",
@@ -4021,7 +4021,7 @@ var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { sec
     // secondary: "#f15e7a",
     background: "#100C18", backgroundDisabled: "#3c3742", backgroundAlt: "#27262c", contrast: "#FFFFFF", dropdown: "#1E1D20", invertedContrast: "#191326", input: "#483f5a", 
     // inputSecondary: "#66578D",
-    inputSecondary: "#f15e7a", primaryDark: "#0098A1", tertiary: "#353547", text: "#EAE2FC", textDisabled: "#666171", textSubtle: "#A28BD4", 
+    inputSecondary: "#f15e7a", primaryDark: "#0098A1", tertiary: "#353547", text: "#EAE2FC", textDisabled: "#666171", textSubtle: "#000000", 
     // textSubtle: "#6400FF",
     borderColor: "#524B63", gradients: {
         bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",

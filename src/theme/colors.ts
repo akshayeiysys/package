@@ -4,7 +4,7 @@ export const baseColors = {
   failure: "#ED4B9E",
   // primary: "#1FC7D4", unlock button and details part
   // primary: "#d41f40",
-  primary: "#6400FF",
+  primary: "#ff5467 ",
   primaryBright: "#53DEE9",
   primaryDark: "#0098A1",
   secondary: "#6400FF",
@@ -29,11 +29,11 @@ export const lightColors: Colors = {
   input: "#eeeaf4",
   inputSecondary: "#d7caec",
   tertiary: "#EFF4F5",
-   text: "#452A7A",
+   text: "#000000",
   //  text: "#6400FF", apr earn cake bnb
   textDisabled: "#BDC2C4",
    // textSubtle: "#8f80ba",
-   textSubtle: "#6400FF",
+   textSubtle: "#000000",
   borderColor: "#E9EAEB",
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
@@ -62,7 +62,7 @@ export const darkColors: Colors = {
   tertiary: "#353547",
   text: "#EAE2FC",
   textDisabled: "#666171",
- textSubtle: "#A28BD4",
+ textSubtle: "#000000",
 //  textSubtle: "#6400FF",
   borderColor: "#524B63",
   gradients: {
