@@ -1,4 +1,3 @@
-import React from "react";
 import { TabProps } from "./types";
-declare const Tab: React.FC<TabProps>;
+declare const Tab: import("styled-components").StyledComponent<"button", import("styled-components").DefaultTheme, TabProps, never>;
 export default Tab;

@@ -32,4 +32,7 @@ export declare const styleVariants: {
     failure: {
         backgroundColor: string;
     };
+    warning: {
+        backgroundColor: string;
+    };
 };

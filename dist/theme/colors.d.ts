@@ -8,8 +8,9 @@ export declare const baseColors: {
     success: string;
     warning: string;
 };
-export declare const brandColors: {
+export declare const additionalColors: {
     binance: string;
+    overlay: string;
 };
 export declare const lightColors: Colors;
 export declare const darkColors: Colors;
