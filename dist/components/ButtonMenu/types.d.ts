@@ -1,10 +1,9 @@
 /// <reference types="react" />
-import { SpaceProps } from "styled-system";
 import { BaseButtonProps, Scale, variants } from "../Button/types";
 export interface ButtonMenuItemProps extends BaseButtonProps {
     isActive?: boolean;
 }
-export interface ButtonMenuProps extends SpaceProps {
+export interface ButtonMenuProps {
     variant?: typeof variants.PRIMARY | typeof variants.SUBTLE;
     activeIndex?: number;
     onItemClick?: (index: number) => void;

@@ -2,7 +2,9 @@ import React from "react";
 import noop from "lodash/noop";
 import { BrowserRouter } from "react-router-dom";
 import { renderWithTheme } from "../../testHelpers";
-import { Menu, menuConfig, LangType } from "../../widgets/Menu";
+import { Menu, menuConfig, Language } from "../../widgets/Menu";
+
+// change
 
 /**
  * @see https://jestjs.io/docs/en/manual-mocks
@@ -21,7 +23,15 @@ Object.defineProperty(window, "matchMedia", {
   })),
 });
 
-const langs: LangType[] = [...Array(20)].map((_, i) => ({ code: `en${i}`, language: `English${i}` }));
+// const langs: Language[] = [...Array(20)].map((_, i) => ({ code: `en${i}`, language: `English${i}` }));
+// change
+
+const langs: Language[] = [...Array(20)].map((_, i) => ({
+  code: `en${i}`,
+  language: `English${i}`,
+  locale: `en${i}-locale`,
+}));
+
 
 it("renders correctly", () => {
   const { asFragment } = renderWithTheme(
