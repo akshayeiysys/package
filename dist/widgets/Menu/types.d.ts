@@ -1,9 +1,8 @@
 import { Colors } from "../../theme/types";
 import { Login } from "../WalletModal/types";
-export interface Language {
+export interface LangType {
     code: string;
     language: string;
-    locale: string;
 }
 export interface Profile {
     username?: string;
@@ -18,6 +17,7 @@ export interface PushedProps {
 }
 export interface NavTheme {
     background: string;
+    hover: string;
 }
 export interface LinkStatus {
     text: string;
@@ -43,8 +43,8 @@ export interface PanelProps {
     toggleTheme: (isDark: boolean) => void;
     cakePriceUsd?: number;
     currentLang: string;
-    langs: Language[];
-    setLang: (lang: Language) => void;
+    langs: LangType[];
+    setLang: (lang: LangType) => void;
     links: Array<MenuEntry>;
 }
 export interface NavProps extends PanelProps {

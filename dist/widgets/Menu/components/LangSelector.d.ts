@@ -1,9 +1,9 @@
 import React from "react";
-import { Language } from "../types";
+import { LangType } from "../types";
 interface Props {
     currentLang: string;
-    langs: Language[];
-    setLang: (lang: Language) => void;
+    langs: LangType[];
+    setLang: (lang: LangType) => void;
 }
 declare const _default: React.NamedExoticComponent<Props>;
 export default _default;
