@@ -1,6 +1,6 @@
 {
   "name": "ajay-uikit",
-  "version": "1.0.78",
+  "version": "1.0.79",
   "description": "Set of UI components for pancake projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
