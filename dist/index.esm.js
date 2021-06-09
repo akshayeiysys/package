@@ -3888,7 +3888,7 @@ var Avatar = function (_a) {
     var icon = image ? (React.createElement("img", { src: image, alt: "profile avatar", height: "32px", width: "32px" })) : (React.createElement(Icon$T, { width: "32px", height: "32px" }));
     if (isExternal) {
         return (React.createElement(StyledAvatar, { title: username },
-            React.createElement("a", { "aria-label": ariaLabel }, icon),
+            React.createElement("a", { href: link, "aria-label": ariaLabel }, icon),
             showPip && React.createElement(Pip, null)));
     }
     return (React.createElement(StyledAvatar, { title: username },

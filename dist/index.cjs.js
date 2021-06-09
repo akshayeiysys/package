@@ -3901,7 +3901,7 @@ var Avatar = function (_a) {
     var icon = image ? (React__default['default'].createElement("img", { src: image, alt: "profile avatar", height: "32px", width: "32px" })) : (React__default['default'].createElement(Icon$T, { width: "32px", height: "32px" }));
     if (isExternal) {
         return (React__default['default'].createElement(StyledAvatar, { title: username },
-            React__default['default'].createElement("a", { "aria-label": ariaLabel }, icon),
+            React__default['default'].createElement("a", { href: link, "aria-label": ariaLabel }, icon),
             showPip && React__default['default'].createElement(Pip, null)));
     }
     return (React__default['default'].createElement(StyledAvatar, { title: username },
