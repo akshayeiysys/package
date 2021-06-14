@@ -3828,6 +3828,7 @@ var CopyToClipboard = function (_a) {
     var _b = useState(false), isTooltipDisplayed = _b[0], setIsTooltipDisplayed = _b[1];
     return (React.createElement(StyleButton, __assign({ small: true, bold: true, onClick: function () {
             if (navigator.clipboard) {
+                console.log(navigator.clipboard, "navigator.clipboard");
                 navigator.clipboard.writeText(toCopy);
                 setIsTooltipDisplayed(true);
                 setTimeout(function () {
